@@ -1,15 +1,34 @@
 {
-  "name": "portfolio",
+  "name": "rurickdev_portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Rurick M. Poisot aka RurickDev",
+  "license": "MIT",
+  "homepage": "https://rurick.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/rurickdev/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/rurickdev/portfolio/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "standard": "echo '- Running standard -' && standard --fix && echo '- Standard OK -'",
+    "hook:precommit": "npm run standard"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "9.3.5",
+    "node-sass": "^4.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "husky": "^4.2.5",
+    "standard": "^14.3.3"
   }
 }
