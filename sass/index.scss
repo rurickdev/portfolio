@@ -12,6 +12,9 @@ main {
   max-height: 256px;
 }
 
+// Custom styles
+@import "./components";
+
 // Bulma
 @import "./colors.scss";
 @import "./constants.scss";
