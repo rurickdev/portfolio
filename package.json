@@ -19,6 +19,11 @@
     "standard": "echo '- Running standard -' && standard --fix && echo '- Standard OK -'",
     "hook:precommit": "npm run standard"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run standard"
+    }
+  },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "next": "9.3.5",
