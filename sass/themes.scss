@@ -1,0 +1,26 @@
+// light Theme
+:root {
+  --background-color: $primary;
+  --bg-color-navbar: white;
+  --text-color: black;
+}
+
+// Dark Theme
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+}
+
+* {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar-brand > * {
+  color: var(--text-color);
+}
