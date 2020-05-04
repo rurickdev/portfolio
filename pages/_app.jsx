@@ -6,11 +6,13 @@ import '../sass/index.scss'
 
 function MyApp ({ Component, pageProps }) {
   return (
-    <Head>
-      <title>RurickDev</title>
+    <>
+      <Head>
+        <title>RurickDev</title>
+      </Head>
       <AppBar />
       <Component {...pageProps} />
-    </Head>
+    </>
   )
 }
 
