@@ -22,8 +22,10 @@ function DarkModeToggler (props) {
   }
 
   useEffect(() => {
-    const storageTheme = localStorage.getItem('data-theme') || 'light'
-    setTheme(storageTheme)
+    const storageTheme = localStorage.getItem('data-theme')
+    if (storageTheme) {
+      setTheme(storageTheme)
+    }
   }, [])
 
   useEffect(() => {
@@ -33,7 +35,7 @@ function DarkModeToggler (props) {
   }, [theme])
 
   return (
-    <span className='has-cursor-pointer icon has-text-primary is-size-4' onClick={toggleTeam}>
+    <span className='has-cursor-pointer icon is-size-4' onClick={toggleTeam}>
       <i className={`fas fa-${icon}`} aria-hidden />
     </span>
   )
