@@ -35,7 +35,7 @@ function DarkModeToggler (props) {
   }, [theme])
 
   return (
-    <span className='has-cursor-pointer icon is-size-4' onClick={toggleTeam}>
+    <span className='has-cursor-pointer icon is-size-4' onClick={toggleTeam} title='toggle dark mode'>
       <i className={`fas fa-${icon}`} aria-hidden />
     </span>
   )
