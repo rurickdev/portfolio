@@ -3,3 +3,26 @@
     cursor: pointer;
   }
 }
+
+.is-flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+    .column {
+      flex-grow: 0.3;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .reverse-columns {
+    .column {
+      flex-grow: 0.4;
+    }
+  }
+}
