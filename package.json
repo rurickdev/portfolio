@@ -19,6 +19,11 @@
     "standard": "echo '- Running standard -' && standard --fix && echo '- Standard OK -'",
     "hook:precommit": "npm run standard"
   },
+  "standard": {
+    "globals": [
+      "localStorage"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run standard"

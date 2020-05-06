@@ -8,15 +8,28 @@ function DarkModeToggler (props) {
   function toggleTeam () {
     if (theme === 'light') {
       setTheme('dark')
-      setIcon('sun')
       return
     }
     setTheme('light')
-    setIcon('moon')
+  }
+
+  function toggleIcon () {
+    if (theme === 'light') {
+      setIcon('moon')
+      return
+    }
+    setIcon('sun')
   }
 
   useEffect(() => {
+    const storageTheme = localStorage.getItem('data-theme') || 'light'
+    setTheme(storageTheme)
+  }, [])
+
+  useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
+    toggleIcon()
+    localStorage.setItem('data-theme', theme)
   }, [theme])
 
   return (
