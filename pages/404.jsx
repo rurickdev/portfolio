@@ -3,7 +3,7 @@ function NotFound (props) {
     <main className='columns is-centered is-vcentered is-marginless is-paddingless has-text-centered'>
       <div className='colum is-one-third'>
         <figure className='image is-404'>
-          <img src='https://s3.us-east-2.amazonaws.com/cdn.rurick.dev/assets/img/404.jpg' alt='' srcSet='' />
+          <img src='https://s3.us-east-2.amazonaws.com/cdn.rurick.dev/assets/img/avatar_404.svg' alt='' srcSet='' />
         </figure>
       </div>
       <div className='colum is-one-third'>
