@@ -23,7 +23,7 @@ function Header (props) {
           </div>
         </div>
       </div>
-      <div className='column is-one-quarter'>
+      <div className='avatar-container column is-one-quarter'>
         <Avatar name='happy' className='is-flip' />
       </div>
     </div>

@@ -3,12 +3,16 @@
   --background-color: $primary;
   --bg-color-navbar: white;
   --text-color: black;
+  --link-color: black;
+  --link-hover-color: #363636;
 }
 
 // Dark Theme
 [data-theme="dark"] {
   --background-color: black;
   --text-color: white;
+  --link-color: white;
+  --link-hover-color: #363636;
 }
 
 * {
