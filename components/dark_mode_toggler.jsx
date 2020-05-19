@@ -22,9 +22,17 @@ function DarkModeToggler (props) {
   }
 
   useEffect(() => {
-    const storageTheme = localStorage.getItem('data-theme')
-    if (storageTheme) {
-      setTheme(storageTheme)
+    const userTheme = localStorage.getItem('data-theme')
+    const isSystemDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    // if the system is dark and the user haven't choose a theme
+    // sets the theme to dark
+    if (isSystemDarkTheme && !userTheme) {
+      setTheme('dark')
+    }
+
+    if (userTheme) {
+      setTheme(userTheme)
     }
   }, [])
 
