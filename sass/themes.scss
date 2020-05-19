@@ -1,3 +1,15 @@
+@media (prefers-color-scheme: dark) {
+  // Dark Theme
+  :root {
+    --background-color: black;
+    --text-color: white;
+    --link-color: white;
+    --link-hover-color: #363636;
+    --simple-color: 100%;
+    --icon-invert: invert(1);
+  }
+}
+
 // light Theme
 :root {
   --background-color: $primary;
